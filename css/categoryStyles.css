@@ -1,0 +1,407 @@
+/* Styling for the whole body */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'David Libre', serif;
+    /* position: relative; */
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the whole body */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Navbar */
+
+.navbar {
+    top: 0;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid rgb(59, 59, 59);
+}
+
+.navbar.active {
+    background-color: rgba(236, 239, 233, 0.95);
+}
+
+.logo {
+    width: 73px;
+    height: 60px;
+}
+
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-collapse, .nav-link, .nav-item, .dropdown-menu, .dropdown-item,
+.dropdown-submenu, .navbar, .img-responsive {
+  z-index: 10;
+}
+
+#linkStyle1, #linkStyle2, #linkStyle3, #linkStyle4, #linkStyle5, #linkStyleLast, .dropdown-item {
+    color: #3b3b3b;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 1.05em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-bottom: 1.5px solid transparent;
+    transition: border-bottom 1s;
+}
+
+#linkStyle1:hover, #linkStyle2:hover, #linkStyle4:hover, #linkStyle5:hover, #linkStyleLast:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #3b3b3b;
+}
+
+#linkStyle3:hover {
+    cursor: default;
+}
+
+.dropdown-item {
+    margin: 2px auto;
+    transition: letter-spacing 1s;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item.active {
+    background-color: transparent;
+    letter-spacing: 1px;
+    color: #3b3b3b;
+}
+
+.dropdown-menu {
+    background-color: white;
+    height: auto;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.navbar-toggler {
+    border: 2px solid black;
+}
+
+.hamburgerDiv {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    margin-bottom: 0.5em;
+}
+
+/* Navbar */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Products category section */
+
+.categories-navbar {
+    background-color: white;
+}
+
+.category-section {
+    color: #3b3b3b;
+    text-align: center;
+    margin-top: 11rem;
+    margin-bottom: 4rem;
+}
+
+.categoryDiv {
+    width: 80vw;
+}
+
+.categoryHeading, .categoryCaption {
+    color: #3b3b3b;
+}
+
+.categoryHeading {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2.9rem;
+}
+
+.categoryCaption {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+.categoryCard {
+    /* box-shadow: 2px 3px 15px #777; */
+    border: none;
+    margin: 1.7em 0.3em;
+}
+
+.categoryImg {
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.categoryBtn {
+    background-color: #3b3b3b;
+    color: white;
+    margin: 1em;
+    margin-bottom: 1.5em;
+    padding: 1rem 1rem;
+    border: 3px solid transparent;
+    width: initial;
+    text-align: center;
+    font-size: 0.9em;
+    width: 200px;
+    white-space: normal;
+}
+
+.categoryBtn:hover, .categoryBtn:active {
+    background-color: transparent;
+    border: 3px solid #3b3b3b;
+    cursor: default !important;
+    color: #3b3b3b;
+}
+
+.categoryDescription {
+    text-align: left;
+    margin: 1em 2em;
+    padding-left: 0.5em;
+}
+
+.categoryDescription > li {
+    line-height: 35px;
+}
+
+.categoryPointIcon {
+    margin-right: 10px;
+    color: green;
+}
+
+/* Products category section */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Contact section */
+
+.contactSection {
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-image: url("./../images/BlackBG.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactDiv {
+    width: 90vw;
+}
+
+.contactHeading {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    font-size: 2.7rem;
+}
+
+.contactCaption {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.contactContainer {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.faIcons, .contactHeaders {
+    margin-bottom: 1.5rem;
+}
+
+.contact-group {
+    margin-bottom: 2.5rem;
+}
+
+.contactDetails {
+    color: rgb(66, 208, 255);
+}
+
+.contactDetails:hover, .contactDetails:active {
+    color: rgb(0, 157, 209);
+}
+
+.fa-map-marker-alt {
+    margin-right: 1.3rem;
+    padding-left: 1rem;
+}
+
+.location {
+    padding-top: 1em;
+}
+
+/* Contact section */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Media queries */
+
+/* All screens with Hamburger menu */
+
+@media screen and (max-width: 991px) {
+
+    #linkStyle1, #linkStyle2, #linkStyle3, #linkStyle4,
+    #linkStyle5, #linkStyleLast, .dropdown-item {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border: none;
+        transition: none;
+        font-size: 1em;
+    }
+
+    #linkStyle1:hover, #linkStyle2:hover, #linkStyle3:hover, 
+    #linkStyle4:hover, #linkStyle5:hover, #linkStyleLast:hover {
+        border: none;
+    }
+
+    .dropdown-menu {
+        border: 1px solid gray;
+        height: auto;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(236, 239, 233, 0.1);
+    }
+
+    #menu {
+        background-color: rgba(236, 239, 233, 0.05) !important;
+    }
+
+    .navbar-collapse, .dropdown-menu {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+}
+
+/* Screens with width <540px - Small screen */
+
+@media screen and (max-width: 540px) {
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactCaption {
+        font-size: 1rem;
+    }
+
+}
+
+/* Screens with width 541px - 767px - Horizontal phone view */
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactCaption {
+        font-size: 1rem;
+    }
+}
+
+/* Screens with width 768px - 991px - Tablets */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactCaption {
+        font-size: 1.2rem;
+    }
+}
+
+/* Screens with width 800px - 991px - Horizontal Pixel 2 XL, Iphone X View  */
+
+@media screen and (min-width: 800px) and (max-width: 991px) {
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactCaption {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Screens with width 992px - 1199px - Horizontal Tablet View */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactCaption {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Screens with width 992px - Laptops & Large screens */
+
+@media screen and (min-width: 992px) {
+    .hamburgerDiv {
+        display: none;
+    }
+    #menu {
+        border: 1px solid lightgray !important;
+        background-color: white !important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Media queries */
